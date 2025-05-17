@@ -1,4 +1,4 @@
-# ebaybe
+# Ebay_BE
 
 # 🛒 Web API Demo Bán Hàng - ASP.NET Core
 
@@ -19,53 +19,30 @@ Dự án này là hệ thống Web API phục vụ cho ứng dụng bán hàng, 
 
 ---
 
-## 📂 Cấu trúc thư mục
-DemoApiNet9/
-│
-├── Controllers/
-│   └── ProductsController.cs
-│
-├── DTOs/
-│   └── ProductDto.cs
-│
-├── Models/
-│   └── Product.cs
-│
-├── Repositories/
-│   ├── IProductRepository.cs
-│   └── ProductRepository.cs
-│
-├── Services/
-│   ├── IProductService.cs
-│   └── ProductService.cs
-│
-├── Data/
-│   ├── AppDbContext.cs // dùng cho code first
-│
-├── Program.cs
-└── DemoApiNet9.csproj
+
 ## ▶️ Hướng dẫn chạy dự án
 ### ✅ 1. Cài đặt
-`dotnet restore`
-`dotnet build`
-✅ 2. Cấu hình chuỗi kết nối
+```cs
+dotnet restore
+```
+```cs
+dotnet build
+```
+### ✅ 2. Cấu hình chuỗi kết nối
 Trong appsettings.json:
 
-json
-Copy
-Edit
+```json
 "ConnectionStrings": {
   "DefaultConnection": "Server=localhost;Database=DemoApiDb;User Id=sa;Password=yourpassword;"
 }
+```
 ✅ 3. Migrate DB (nếu dùng Code First)
-bash
-Copy
-Edit
+```bash
 dotnet ef database update
+```
 ✅ 4. Chạy ứng dụng
-bash
-Copy
-Edit
+```bash
 dotnet run
+```
 
 
